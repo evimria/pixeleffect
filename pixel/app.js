@@ -1,5 +1,5 @@
 const canvas = document.querySelector('canvas');
-const cxt = canvas.getContext('2d')
+const ctx = canvas.getContext('2d')
 const links = [...document.querySelectorAll('li')];
 
 function lerp(start, end, t){
@@ -24,7 +24,7 @@ let imgArr = [];
 
 let targetX = 0;
 let targetY = 0;
-let currentX = 0;
+let currentX = 30;
 let currentY = 0;
 
 window.addEventListener('mousemove', (e)=> {
